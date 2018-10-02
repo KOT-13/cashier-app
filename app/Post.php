@@ -25,4 +25,11 @@ class Post extends Model
     public function author() {
         return $this->belongsTo(User::class, 'user_id');
     }
+
+    /**
+     * @return string
+     */
+    public function getExcerpt() {
+        return str_limit($this->content, 40);
+    }
 }

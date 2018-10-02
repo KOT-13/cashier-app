@@ -7,6 +7,14 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+@import 'layout/module';
+@import 'base/module';
+@import 'pages/module';
+@import 'components/module';
+
+body {
+  background: #EFEFEF;
+}
 
 .navbar-laravel {
   background-color: #fff;

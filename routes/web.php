@@ -12,11 +12,15 @@
 */
 
 // site routes
-Route::get('/', 'SiteController@showHome');
-Route::get('{slug}', 'SiteController@showPost');
+Route::get('/', 'SiteController@showHome')->name('home');
 
-// authenticayion routes
+// authentication routes
+Route::auth();
 
-//subscription routes
+// subscription routes
 
 // account routes
+
+// single post route
+Route::get('{slug}', 'SiteController@showPost');
+
